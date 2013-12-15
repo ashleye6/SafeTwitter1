@@ -1,0 +1,8 @@
+<h1>Welcome to SafeTwitter</h1>
+<p> View your timeline without any TV spoilers</p>
+
+ <%= form_tag '/search', method: :get do %>
+<%= label_tag 'q', "Search for a TV Show" %>
+<%= text_field_tag 'q' %>
+<%= submit_tag %>
+<% end %>

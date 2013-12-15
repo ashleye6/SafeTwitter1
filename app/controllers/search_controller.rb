@@ -1,0 +1,6 @@
+class SearchController < ApplicationController
+ def index
+          @query = params['q']
+          @tvshows = Tvshow.search_for @query
+  end
+end
