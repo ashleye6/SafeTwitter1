@@ -2,7 +2,6 @@
 <p> View your timeline without any TV spoilers</p>
 
  <%= form_tag '/search', method: :get do %>
-<%= label_tag 'q', "Search for a TV Show" %>
-<%= text_field_tag 'q' %>
-<%= submit_tag %>
+<%= text_field_tag 'q', nil, :placeholder => "Type TV Show Name" %>
+<%= submit_tag("Search") %>
 <% end %>

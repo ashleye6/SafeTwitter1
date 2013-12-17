@@ -1,11 +1,24 @@
-<% @tvshows.each do |p| %>
-<h3><%= p.title %></h3>
-<%= image_tag(p.image) %>
+<% @tvshows.each do |tvshow| %>
+  <h3><%= tvshow.title %></h3>
+  <%= image_tag(tvshow.image) %>
 
-<% end %> <br/>
+  <br/>
 
-Tweets containing the following keywords will be removed from your timeline: 
+  Tweets containing the following keywords will be removed from your timeline: 
+
+  <br/> 
+
+  <% tvshow.phrases.each do |phrase| %>
+    <%= phrase.text %>
+  <% end %>
+<% end %>
+
+<br/>
+
+
+
 
 <br/> 
 
-<%= link_to "Go to Timeline" , "www.google.com" %> 
+<%= link_to "Go to Timeline", twitter_timeline_path %> 
+
