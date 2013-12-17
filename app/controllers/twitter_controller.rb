@@ -5,10 +5,6 @@ class TwitterController < ApplicationController
   def login
   end
 
-  def finalize
-  end
-
-
 
   
 end
