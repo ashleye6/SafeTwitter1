@@ -57,5 +57,6 @@ end
 
 gem 'omniauth-twitter'
 
-gem 'twitter'
+gem 'twitter', '~> 5.03'
+
 

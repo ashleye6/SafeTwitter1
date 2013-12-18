@@ -7,4 +7,3 @@ Client = Twitter::REST::Client.new do |config|
   config.access_token_secret = ENV['access_token_secret']
 end
 
-

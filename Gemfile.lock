@@ -85,7 +85,7 @@ GEM
     mail (2.5.4)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
-    memoizable (0.2.0)
+    memoizable (0.3.1)
       thread_safe (~> 0.1.3)
     method_source (0.8.2)
     mime-types (1.25.1)
@@ -165,9 +165,9 @@ GEM
     treetop (1.4.15)
       polyglot
       polyglot (>= 0.3.1)
-    turbolinks (2.0.0)
+    turbolinks (2.1.0)
       coffee-rails
-    twitter (5.2.0)
+    twitter (5.3.0)
       addressable (~> 2.3)
       buftok (~> 0.2.0)
       descendants_tracker (~> 0.0.1)
@@ -176,7 +176,7 @@ GEM
       http (~> 0.5.0)
       http_parser.rb (~> 0.6.0)
       json (~> 1.8)
-      memoizable (~> 0.2.0)
+      memoizable (~> 0.3.1)
       simple_oauth (~> 0.2.0)
     tzinfo (0.3.38)
     uglifier (2.3.3)
@@ -201,5 +201,5 @@ DEPENDENCIES
   sdoc
   sqlite3
   turbolinks
-  twitter
+  twitter (~> 5.03)
   uglifier (>= 1.3.0)
