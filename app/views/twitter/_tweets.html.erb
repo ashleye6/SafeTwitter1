@@ -4,7 +4,7 @@
     <% @tweets.each do |tweet| %>
     @<%= tweet.user.screen_name %>
     <%= image_tag(tweet.user.profile_image_url) %>
-      <li><%= link_to tweet.text, "https://www.twitter.com/#{tweet.user.screen_name}=twitter&include_entities=true" %></li>
+      <li><%= link_to check_if_redacted(tweet.text), "https://www.twitter.com/#{tweet.user.screen_name}=twitter&include_entities=true" %></li>
   </ul>
 </section>
 

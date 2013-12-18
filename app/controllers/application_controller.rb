@@ -14,3 +14,14 @@ class ApplicationController < ActionController::Base
     end
     helper_method :current_user
 end
+
+#create another model with blocked shows
+
+#blockedphrases_id
+#user_id
+
+#current_user.blockedphrases ---> pass into redacted twitter helper
+
+#blocked.select do |b|
+#tweet.include? b
+
