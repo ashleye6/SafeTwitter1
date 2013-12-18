@@ -5,7 +5,7 @@ class ApplicationController < ActionController::Base
   before_filter :load_tweets
 
   def load_tweets
-    @tweets = Client.home_timeline
+    @tweets = Client.home_timeline # For this demonstration lets keep the tweets limited to the first 5 available.
   end
 
   private
