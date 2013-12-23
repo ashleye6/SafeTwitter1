@@ -18,6 +18,7 @@ end
 #create another model with blocked shows
 
 #blockedphrases_id
+#phrase_id
 #user_id
 
 #current_user.blockedphrases ---> pass into redacted twitter helper

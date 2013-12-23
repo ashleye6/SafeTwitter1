@@ -1,11 +1,28 @@
 
 <section id="tweets">
   <ul>
-    <% @tweets.each do |tweet| %>
+    <% tweet = @tweets.each do |tweet| %>
     @<%= tweet.user.screen_name %>
     <%= image_tag(tweet.user.profile_image_url) %>
       <li><%= link_to check_if_redacted(tweet.text), "https://www.twitter.com/#{tweet.user.screen_name}=twitter&include_entities=true" %></li>
   </ul>
-</section>
+
+  <% for blockedshows in current_user.blockedshows %>
+      <%= blocked = blockedshows.phrases.text %>  
+          <%= result = blocked.select do |b| %>
+          <%= tweet.include? b %>
+    <% end %>
+  
+
+  <% if result.empty? %>
+      <%= tweet %>  
+  <% else %>
+    <%= content_tag(:div, class: 'redacted') {tweet} %>
+
+  <% end %>   
+
+  <%end %>
+
+  </section>
 
 <% end %> 
