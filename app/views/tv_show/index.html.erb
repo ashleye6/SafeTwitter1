@@ -3,7 +3,7 @@
 <%= current_user.blockedshows.each do |blocked|%> 
 <h2> <%= blocked.title %> </br> </h2>
 
-<%= link_to "Add a TV Show" %> </br>
+<%= link_to "Add a TV Show", new_blockedshow_path %> </br>
 
 <%= link_to "Go to Timeline", twitter_timeline_path %> </br>
 

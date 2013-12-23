@@ -2,6 +2,7 @@
 <html>
 <head>
   <title>SafeTwitter</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
@@ -11,15 +12,36 @@
     <div id="user_nav">
       <% if current_user %>
       Signed in as <%= current_user.name %>!
+          <div class="alert alert-success">You have successfully logged in</div>
        
-      <%= link_to "Sign Out", signout_path %>
+      <!--<%= link_to "Sign Out", signout_path %>-->
       <% else %>
-      <%= link_to "Sign in with Twitter", "/auth/twitter" %>
+      <!--<%= link_to "Sign in with Twitter", "/auth/twitter" %>-->
       <% end %>
     </div>
   </div>
 
-<%= yield %>
+<div class="container">
+  <header class="row">
+    <nav class="navbar navbar-pills">
+      <div class="navbar-header">
+        <%= link_to(image_tag('logo.png', class: 'logo'), root_path, class: "pull-left")%>
+        <!--<%= link_to "Safe Twitter", root_path, class: 'navbar-brand' %>-->
+      </div>
+      <ul class="nav navbar-nav">
+        <li><%=link_to "Home", root_path %></li>
+        <li><%=link_to "My Blocked Tv Shows", tv_show_index_path %></li>
+        <li><%=link_to "Timeline", twitter_timeline_path%></li>
+        <% if current_user %>
+        <li><%=link_to "Sign Out", signout_path%></li>
+            <%else %>
+                 <li><%=link_to "Sign in with Twitter", "/auth/twitter" %></li>
+            <%end %>
 
+      </ul>
+    </nav>
+  </header>
+  <%= yield %>
+</div>
 </body>
 </html>
