@@ -8,21 +8,21 @@
   </ul>
 
   <% for blockedshows in current_user.blockedshows %>
-      <%= blockedshows.phrases %>  
+      <%= blockedshows.phrases %>
       <% for phrases in blockedshows.phrases %>
       <%= blocked = phrases.text %>
           <%= result = blocked.select do |b| %>
           <%= tweet.include? b %>
     <% end %>
-  
-  <% end %> 
+
+  <% end %>
 
   <% if result.empty? %>
-      <%= tweet %>  
+      <%= tweet %>
   <% else %>
     <%= content_tag(:div, class: 'redacted') {tweet} %>
 
-  <% end %>   
+  <% end %>
 
   <%end %>
 

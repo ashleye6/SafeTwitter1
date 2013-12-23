@@ -1,11 +1,12 @@
-<h1>My Blocked TV Shows</h1>
+<h1>My Blocked TV Shows:</h1>
 
 <%= current_user.blockedshows.each do |blocked|%> 
-<h2> <%= blocked.title %> </br> </h2>
+<h4> <%= blocked.title %> </br> </h4>
 
 <%= link_to "Add a TV Show", new_blockedshow_path %> </br>
 
 <%= link_to "Go to Timeline", twitter_timeline_path %> </br>
 
 <% end %> 
+
 
