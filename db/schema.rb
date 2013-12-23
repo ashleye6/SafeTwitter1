@@ -11,17 +11,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131223024026) do
+ActiveRecord::Schema.define(version: 20131223081924) do
 
   create_table "blockedshows", force: true do |t|
     t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "title"
   end
 
-  add_index "blockedshows", ["user_id"], name: "index_blockedshows_on_user_id"
-
   create_table "phrases", force: true do |t|
+    t.decimal  "blockedshow_id"
     t.string   "text"
     t.datetime "created_at"
     t.datetime "updated_at"

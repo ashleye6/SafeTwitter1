@@ -1,4 +1,11 @@
-<h1>Search for a Tv Show</h1>
-<p>Find me in app/views/tv_show/index.html.erb</p>
+<h1>My Blocked TV Shows</h1>
 
+<%= current_user.blockedshows.each do |blocked|%> 
+<h2> <%= blocked.title %> </br> </h2>
+
+<%= link_to "Add a TV Show" %> </br>
+
+<%= link_to "Go to Timeline", twitter_timeline_path %> </br>
+
+<% end %> 
 
