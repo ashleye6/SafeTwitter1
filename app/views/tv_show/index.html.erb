@@ -1,12 +1,41 @@
 <h1>My Blocked TV Shows:</h1>
 
-<%= current_user.blockedshows.each do |blocked|%> 
-<h4> <%= blocked.title %> </br> </h4>
 
-<%= link_to "Add a TV Show", new_blockedshow_path %> </br>
 
-<%= link_to "Go to Timeline", twitter_timeline_path %> </br>
+<div class="panel-group" id="accordion">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+          <%= current_user.blockedshows.each do |blocked|%>
+              <%= blocked.title %>
+              <% end %>
+              </a>
+      </h4>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse in">
+      <div class="panel-body">
+        <h4>
+
+          <% for blockedshows in current_user.blockedshows %>
+              <%= blockedshows.phrases %>
+              <% for phrases in blockedshows.phrases %>
+                  <%= image_tag(blockedshows.image) %> </br>
+                  Tweets containing the following keywords will be removed from your timeline: </br>
+
+                  <%= phrases.text %> </br> </h4>
+
+      </div>
+    </div>
+  </div>
+
+                  <%= link_to "Add a TV Show", new_blockedshow_path %> </br>
+
+                  <%= link_to "Go to Timeline", twitter_timeline_path %> </br>
+
+
 
 <% end %> 
 
 
+<% end %>
