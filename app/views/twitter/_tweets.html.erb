@@ -8,11 +8,14 @@
   </ul>
 
   <% for blockedshows in current_user.blockedshows %>
-      <%= blocked = blockedshows.phrases.text %>  
+      <%= blockedshows.phrases %>  
+      <% for phrases in blockedshows.phrases %>
+      <%= blocked = phrases.text %>
           <%= result = blocked.select do |b| %>
           <%= tweet.include? b %>
     <% end %>
   
+  <% end %> 
 
   <% if result.empty? %>
       <%= tweet %>  
