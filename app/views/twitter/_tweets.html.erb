@@ -7,26 +7,15 @@
       <li><%= link_to tweet.text, "https://www.twitter.com/#{tweet.user.screen_name}=twitter&include_entities=true" %></li>
   </ul>
 
-
-        <% for blockedshows in current_user.blockedshows %>
-            <%= blockedshows.phrases %>
-            <% for phrases in blockedshows.phrases %>
-                <%= blocked = phrases.text %>
-                <%= result = blocked.select do |b| %>
-                    <%= tweet.include? b %>
+        <% current_user.blockedshows.each do |blockedshow| %>
+            <% blockedshow.phrases.each do |phrase| %> </br>
+                <% if tweet.text.include?(phrase.text)%>
+                    <%= check_if_redacted(tweet.text)  %>
                 <% end %>
-
             <% end %>
-
-            <% if result.empty? %>
-                <%= tweet %>
-            <% else %>
-                <%= content_tag(:div, class: 'redacted') {tweet} %>
-
-            <% end %>
-
-        <%end %>
+        <% end %>
 
   </section>
 
 <% end %> 
+
