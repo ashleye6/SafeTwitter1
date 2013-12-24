@@ -7,8 +7,6 @@
       <li><%= link_to tweet.text, "https://www.twitter.com/#{tweet.user.screen_name}=twitter&include_entities=true" %></li>
   </ul>
 
-        <!--<li><%= link_to check_if_redacted(tweet.text), "https://www.twitter.com/#{tweet.user.screen_name}=twitter&include_entities=true" %></li>-->
-        <!--</ul>   -->
 
         <% for blockedshows in current_user.blockedshows %>
             <%= blockedshows.phrases %>
