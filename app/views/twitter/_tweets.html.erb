@@ -4,18 +4,21 @@
     <% tweet = @tweets.each do |tweet| %>
     @<%= tweet.user.screen_name %>
     <%= image_tag(tweet.user.profile_image_url) %>
-      <li><%= link_to tweet.text, "https://www.twitter.com/#{tweet.user.screen_name}=twitter&include_entities=true" %></li>
+
+
+                <% if is_redacted? tweet %>
+                    <!-- Tweet contains at least one blocked phrase. -->
+                    <li><%= link_to check_if_redacted(tweet.text), "https://www.twitter.com/#{tweet.user.screen_name}" %></li> </br>
+                <% else %>
+                    <!-- Tweet contains no blocked phrases. -->
+                    <li><%= link_to tweet.text, "https://www.twitter.com/#{tweet.user.screen_name}" %></li> </br>
+
+
+    <% end %>
+
   </ul>
 
-        <% current_user.blockedshows.each do |blockedshow| %>
-            <% blockedshow.phrases.each do |phrase| %> </br>
-                <% if tweet.text.include?(phrase.text)%>
-                    <%= check_if_redacted(tweet.text)  %>
-                <% end %>
-            <% end %>
-        <% end %>
+ </section>
 
-  </section>
-
-<% end %> 
+<% end %>
 
