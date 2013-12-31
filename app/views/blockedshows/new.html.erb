@@ -1,0 +1,11 @@
+
+
+
+<%= form_for @blockedshow do |p| %>
+    <%= p.label :title, "Add a Blocked TV Show " %><br/>
+    <%= collection_select(:tvshow, :id, Tvshow.all, :id, :title, prompt: true) %>
+
+    <%= submit_tag 'Add' %>
+<% end %>
+
+Don't see a tv show? Click here to send suggestions of what you want added.
