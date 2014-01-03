@@ -25,7 +25,9 @@ class ApplicationController < ActionController::Base
     #def logged_in?
     #  !!current_user
     #end
-end
+  end
+
+
 
 #create another model with blocked shows
 

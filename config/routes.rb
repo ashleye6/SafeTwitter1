@@ -14,8 +14,11 @@ SafeTwitter::Application.routes.draw do
   get 'signout', to: 'sessions#destroy', as: 'signout'
   get 'auth/failure', to: redirect('/')
   get 'twitter/timeline'
-
+  controller :twitter do
+  post "twitter/timeline"
   resources :blockedshows
+
+  post 'blockedshows', to:'blockedshows#create#[:id]'
   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
@@ -71,4 +74,5 @@ SafeTwitter::Application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
-end
+  end
+  end
