@@ -14,25 +14,29 @@
     </div>
     <div id="collapse<%= index.to_s %>" class="panel-collapse collapse in">
       <div class="panel-body">
+        <div class="scroll">
         <h4>
               <%= image_tag(blocked.image) %> </br>
-              <% for blocked in blocked.phrases %>
 
                   Tweets containing the following keywords will be removed from your timeline: </br>
 
-                  <%= blocked.text %> </br> </h4>
+              <%@keywords = blocked.phrases.map(&:text) %>
+                <%=@keywords %>
 
+                    </h4>
+              </div>
       </div>
     </div>
-  </div>
 
-                  <%end %>
-              <% end %>
+
+</div>
+  <% end %>
 
 
                   <%= link_to "Add a TV Show", new_blockedshow_path %> </br>
 
                   <%= link_to "Go to Timeline", twitter_timeline_path %> </br>
+
 
 
 
