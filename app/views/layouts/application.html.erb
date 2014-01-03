@@ -32,9 +32,16 @@
         <!--<%= link_to "Safe Twitter", root_path, class: 'navbar-brand' %>-->
       </div>
       <ul class="nav navbar-nav">
+     <% if current_user %>
         <li><%=link_to "Home", root_path %></li>
         <li><%=link_to "My Blocked Tv Shows", tv_show_index_path %></li>
         <li><%=link_to "Timeline", twitter_timeline_path%></li>
+            <%else%>
+            <li><%=link_to "Home", root_path %></li>
+            <li><%=link_to "My Blocked Tv Shows", root_path, alert:"You're a guest. That page was for users only :)" %></li>
+            <li><%=link_to "Timeline", root_path, alert:"You're a guest. That page was for users only :)"%></li>
+        <%end%>
+
         <% if current_user %>
         <li><%=link_to "Sign Out", signout_path%></li>
             <%else %>

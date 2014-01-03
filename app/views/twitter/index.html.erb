@@ -1,9 +1,13 @@
 <h1>Welcome to SafeTwitter</h1>
 <p> View your timeline without any TV spoilers</p>
 
+<% if current_user %>
 <p> <a href="http://intense-bastion-9743.herokuapp.com/blockedshows/new" class="btn btn-primary btn-lg" role="button">Get Started!</a> </p>
+    <%else%>
+    <p> <a href= "/auth/twitter" class="btn btn-primary btn-lg" role="button">Get Started!</a> </p>
 
- <!--<%= form_tag '/search', method: :get do %>-->
+    <!--<%= form_tag '/search', method: :get do %>-->
 <!--<%= text_field_tag 'q', nil, :placeholder => "Type TV Show Name" %>-->
 <!--<%= submit_tag("Select") %>-->
-<!--<% end %>-->
+<% end %>
+<%end%>

@@ -3,7 +3,7 @@ class ApplicationController < ActionController::Base
   # For APIs, you may want to use :null_session instead.
   protect_from_forgery with: :exception
   before_filter :load_tweets
-  before_filter :authenticate
+  #before_filter :authenticate
 
   def load_tweets
     @tweets = Client.home_timeline 
@@ -21,25 +21,13 @@ class ApplicationController < ActionController::Base
     #  end
     #end
     ##
-    def logged_in?
-      !!current_user
-    end
-
-  def authenticate
-    redirect_to "/auth/twitter" unless logged_in?
+  #  def logged_in?
+  #    !!current_user
+  #  end
+  #
+  #def authenticate
+  #  redirect_to "/auth/twitter" unless logged_in?
+  #end
   end
-  end
 
-
-
-#create another model with blocked shows
-
-#blockedphrases_id
-#phrase_id
-#user_id
-
-#current_user.blockedphrases ---> pass into redacted twitter helper
-
-#blocked.select do |b|
-#tweet.include? b
 
