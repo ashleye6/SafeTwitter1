@@ -15,7 +15,6 @@
 
                 <% if is_redacted? tweet %>
                     <!-- Tweet contains at least one blocked phrase. -->
-                    <li><%= link_to check_if_redacted(tweet.text), "https://www.twitter.com/#{tweet.user.screen_name}" %></li> </br>
 
                     <a href="https://www.twitter.com/#{tweet.user.screen_name}" data-toggle="tooltip" title="This tweet contains the phrase:<%=@phrases%> "> <%= check_if_redacted(tweet.text)%></a>
 
