@@ -1,4 +1,5 @@
 class SessionsController < ApplicationController
+  skip_before_filter :authenticate, :only =>[:create, :destroy]
 
   def create
     user = User.from_omniauth(env["omniauth.auth"])
@@ -8,6 +9,5 @@ class SessionsController < ApplicationController
 
   def destroy
     session[:user_id] = nil
-    redirect_to root_url, notice: "Signed out!"
   end
 end

@@ -21,9 +21,9 @@
                   Tweets containing the following keywords will be removed from your timeline: </br>
 
               <%@keywords = blocked.phrases.map(&:text) %>
-                <%=@keywords %>
+                <%=@keywords %> </br>
 
-                    </h4>
+        </h4>
               </div>
       </div>
     </div>
@@ -34,6 +34,9 @@
 
 
                   <%= link_to "Add a TV Show", new_blockedshow_path %> </br>
+            <a href="http://localhost:3000/blockedshows/destroy" >Remove a Tv Show</a> </p>
+
+
 
                   <%= link_to "Go to Timeline", twitter_timeline_path %> </br>
 

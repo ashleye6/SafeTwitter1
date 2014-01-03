@@ -2,7 +2,19 @@ class BlockedshowsController < ApplicationController
   def new
     @blockedshow = Blockedshow.new
   end
+  def delete
+    @tvshow = Tvshow.find params[:blockedshow][:tvshow_id]
+    @blockedshow = Blockedshow.destroy(
+        :user_id =>current_user.id,
+        :title=> @tvshow.title,
+        :image=> @tvshow.image,
+        :tvshow_id=>@tvshow.id
+    )
+  end
 
+  def show
+
+  end
 
   def create
     @tvshow = Tvshow.find params[:blockedshow][:tvshow_id]
@@ -27,4 +39,5 @@ class BlockedshowsController < ApplicationController
   def safe_blockedshow
     params.require(:blockedshow).permit(:title, :user_id, :tvshow_id, :image)
   end
+
 end

@@ -19,7 +19,7 @@ SafeTwitter::Application.routes.draw do
   resources :blockedshows
 
   post 'blockedshows', to:'blockedshows#create#[:id]'
-  
+    delete 'blockedshows', to: 'tv_show#index'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
