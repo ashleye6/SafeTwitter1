@@ -9,6 +9,7 @@ SafeTwitter::Application.routes.draw do
   get "twitter/finalize"
   get "tv_show/index"
   get 'search', to: 'search#index'
+  get "blockedshows/index"
 
   get 'auth/twitter/callback', to: 'sessions#create'
   get 'signout', to: 'sessions#destroy', as: 'signout'
@@ -17,9 +18,9 @@ SafeTwitter::Application.routes.draw do
   controller :twitter do
   post "twitter/timeline"
   resources :blockedshows
+  get 'blockedshows/destroy', to: 'blockedshows#index'
 
   post 'blockedshows', to:'blockedshows#create#[:id]'
-    delete 'blockedshows', to: 'tv_show#index'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

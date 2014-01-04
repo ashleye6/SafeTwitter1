@@ -1,7 +1,2 @@
-<%= form_for(@blockedshow, :html => { :method => :delete, :remote => true }) do |f| %>
-    <%= f.label :tvshow_id, "Remove a Blocked TV Show " %><br/>
-    <%= collection_select(:blockedshow, :tvshow_id, Tvshow.all, :id, :title, prompt: true) %>
 
-    <%= submit_tag 'Remove' %>
-<% end %>
 

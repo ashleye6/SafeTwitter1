@@ -35,7 +35,7 @@
       <ul class="nav navbar-nav">
      <% if current_user %>
         <li><%=link_to "Home", root_path %></li>
-        <li><%=link_to "My Blocked Tv Shows", tv_show_index_path %></li>
+        <li><%=link_to "My Blocked Tv Shows", blockedshows_index_path %></li>
         <li><%=link_to "Timeline", twitter_timeline_path%></li>
             <%else%>
             <li><%=link_to "Home", root_path %></li>

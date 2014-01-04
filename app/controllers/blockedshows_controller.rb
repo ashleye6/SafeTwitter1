@@ -2,17 +2,18 @@ class BlockedshowsController < ApplicationController
   def new
     @blockedshow = Blockedshow.new
   end
-  def delete
-    @tvshow = Tvshow.find params[:blockedshow][:tvshow_id]
-    @blockedshow = Blockedshow.destroy(
-        :user_id =>current_user.id,
-        :title=> @tvshow.title,
-        :image=> @tvshow.image,
-        :tvshow_id=>@tvshow.id
-    )
-  end
 
-  def show
+
+  def destroy
+    @blockedshow = Blockedshow.find(params[:id])
+    @blockedshow.destroy
+
+    #respond_to do |format|
+    #  format.html { render action: "destroy" }
+    #  format.json { head :no_content }
+
+      redirect_to blockedshows_index_path
+
 
   end
 
@@ -25,14 +26,16 @@ class BlockedshowsController < ApplicationController
         :tvshow_id=>@tvshow.id
     )
 
-
-
     if @blockedshow.save
       flash[:notice] = "New Blocked TV Show added successfully"
-      redirect_to tv_show_index_path
+      redirect_to blockedshows_index_path
     else
       render 'new'
     end
+
+  end
+
+  def index
   end
   private
 
