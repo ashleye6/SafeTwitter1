@@ -5,12 +5,15 @@ class TwitterController < ApplicationController
   def login
   end
 
+  def timeline
+    @key = current_user.blockedshows.map(&:phrases).flatten.map(&:text)
+  end
+
   def tweet
     text = params[:my_tweet]
-     Client.update(text) unless text==nil
-
-end
-
+    Client.update(text) unless text==nil
+    redirect_to twitter_timeline_path
+  end
   private
 
   def is_redacted? tweet

@@ -1,4 +1,4 @@
-<%= form_tag(twitter_timeline_path, method: "post") do %>
+<%= form_tag(tweet_path, method: "post") do %>
     <%= label_tag(:my_tweet, current_user.name) %>
     <%= text_field_tag(:my_tweet) %>
     <%= submit_tag("tweet") %> </br>
@@ -16,7 +16,9 @@
                 <% if is_redacted? tweet %>
                     <!-- Tweet contains at least one blocked phrase. -->
 
-                    <a href="https://www.twitter.com/#{tweet.user.screen_name}" data-toggle="tooltip" title="This tweet contains the phrase:<%=@phrases%> "> <%= check_if_redacted(tweet.text)%></a>
+                    <a href="https://www.twitter.com/#{tweet.user.screen_name}" data-toggle="tooltip"
+                       title="This tweet contains the phrase:<%=@key%> ">
+                      <%= check_if_redacted(tweet.text)%></a>
 
 
                 <% else %>

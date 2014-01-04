@@ -16,7 +16,9 @@ SafeTwitter::Application.routes.draw do
   get 'auth/failure', to: redirect('/')
   get 'twitter/timeline'
   controller :twitter do
-  post "twitter/timeline"
+    post 'tweet' => :tweet
+  end
+  post 'twitter/timeline'
   resources :blockedshows
   get 'blockedshows/destroy', to: 'blockedshows#index'
 
@@ -76,4 +78,4 @@ SafeTwitter::Application.routes.draw do
   #     resources :products
   #   end
   end
-  end
+
