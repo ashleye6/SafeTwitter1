@@ -17,3 +17,7 @@
 img { 
         max-width: 300px;
 }
+
+.logo {
+    max-height: 100px;
+}

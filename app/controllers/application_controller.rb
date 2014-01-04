@@ -9,6 +9,10 @@ class ApplicationController < ActionController::Base
     @tweets = Client.home_timeline 
   end
 
+  def picture
+    @profile_pic = Client.profile_image_url
+  end
+
   private
     def current_user
       @current_user ||= User.find(session[:user_id]) if session[:user_id]
