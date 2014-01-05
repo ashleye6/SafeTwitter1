@@ -1,11 +1,5 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
-
+Tvshow.delete_all
+Phrase.delete_all
 
 puts 'Adding seed tv shows?'
 Tvshow.create title: "Breaking Bad",
@@ -21,12 +15,27 @@ puts 'Done adding tv shows'
 
 puts 'Adding phrases?'
 Phrase.create text: "Olivia Pope",
-              tvshow_id: ''
+              tvshow_id: '2',
+              blockedshow: '1'
 
 Phrase.create text: "Walt",
-              tvshow_id: ''
+              tvshow_id: '1',
+              blockedshow: '2'
 
 Phrase.create text: "GoT",
-              tvshow_id: ''
+              tvshow_id: '3',
+              blockedshow: '3'
+
+Phrase.create text: "Jesse",
+              tvshow_id: '1',
+              blockedshow: '3'
+
+Phrase.create text: "Huck",
+              tvshow_id: '2',
+              blockedshow: '1'
+
+Phrase.create text: "Joffrey",
+              tvshow_id: '3',
+              blockedshow: '3'
 
 puts 'Done adding phrases'
