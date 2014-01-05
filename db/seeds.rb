@@ -1,6 +1,3 @@
-Tvshow.delete_all
-Phrase.delete_all
-
 puts 'Adding seed tv shows?'
 tvshow1 = Tvshow.create title: "Breaking Bad",
              image: 'http://www.thecampuscompanion.com/party-lab/files/2012/09/breaking-bad-drinking-game-1024x640.png'
