@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d04b9524-8f42-48b4-8854-2322136c80d9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20131215162557_create_phrases.rb" afterPath="$PROJECT_DIR$/db/migrate/20131215162557_create_phrases.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20131223024026_create_blockedshows.rb" afterPath="$PROJECT_DIR$/db/migrate/20131223024026_create_blockedshows.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
     </list>
     <ignored path="SafeTwitter.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -71,10 +70,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="20131215162557_create_phrases.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="20131215162557_create_phrases.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/db/migrate/20131215162557_create_phrases.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="26" selection-start="85" selection-end="85" vertical-scroll-proportion="0.04754358" vertical-offset="0" max-vertical-offset="631">
+            <state line="2" column="26" selection-start="85" selection-end="85" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="schema.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/db/schema.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="26" column="37" selection-start="1130" selection-end="1130" vertical-scroll-proportion="0.2393027" vertical-offset="239" max-vertical-offset="945">
               <folding />
             </state>
           </provider>
@@ -101,7 +109,6 @@
         <option value="$PROJECT_DIR$/app/views/twitter/tweetfunc.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/tv_show.css.scss" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/twitter.css.scss" />
-        <option value="$PROJECT_DIR$/db/schema.rb" />
         <option value="$PROJECT_DIR$/app/views/blockedshows/new.html.erb" />
         <option value="$PROJECT_DIR$/app/views/tv_show/index.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/sessions_controller.rb" />
@@ -119,6 +126,7 @@
         <option value="$PROJECT_DIR$/app/models/phrase.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20131223024026_create_blockedshows.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20131215162557_create_phrases.rb" />
+        <option value="$PROJECT_DIR$/db/schema.rb" />
       </list>
     </option>
   </component>
@@ -1056,13 +1064,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/schema.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="23" selection-start="821" selection-end="821" vertical-scroll-proportion="0.21394612" vertical-offset="90" max-vertical-offset="945">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/twitter_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="43" selection-start="144" selection-end="144" vertical-scroll-proportion="0.18348624" vertical-offset="0" max-vertical-offset="654">
@@ -1093,7 +1094,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20131215162557_create_phrases.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="26" selection-start="85" selection-end="85" vertical-scroll-proportion="0.04754358" vertical-offset="0" max-vertical-offset="631">
+        <state line="2" column="26" selection-start="85" selection-end="85" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/schema.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="37" selection-start="1130" selection-end="1130" vertical-scroll-proportion="0.2393027" vertical-offset="239" max-vertical-offset="945">
           <folding />
         </state>
       </provider>

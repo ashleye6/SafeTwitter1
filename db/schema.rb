@@ -24,8 +24,8 @@ ActiveRecord::Schema.define(version: 20140101173208) do
 
   add_index "blockedshows", ["tvshow_id"], name: "index_blockedshows_on_tvshow_id"
 
-  create_table 'phrases', force: true do |t|
-    t.decimal 'blockedshow_id'
+  create_table "phrases", force: true do |t|
+    t.decimal "blockedshow_id"
     t.string   "text"
     t.datetime "created_at"
     t.datetime "updated_at"
