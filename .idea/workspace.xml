@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d04b9524-8f42-48b4-8854-2322136c80d9" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20131215162557_create_phrases.rb" afterPath="$PROJECT_DIR$/db/migrate/20131215162557_create_phrases.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20131223024026_create_blockedshows.rb" afterPath="$PROJECT_DIR$/db/migrate/20131223024026_create_blockedshows.rb" />
     </list>
     <ignored path="SafeTwitter.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -46,7 +47,7 @@
       <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/blockedshows/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="25" selection-start="785" selection-end="785" vertical-scroll-proportion="-13.75" vertical-offset="0" max-vertical-offset="795">
+            <state line="2" column="16" selection-start="47" selection-end="47" vertical-scroll-proportion="-1.25" vertical-offset="0" max-vertical-offset="795">
               <folding />
             </state>
           </provider>
@@ -55,7 +56,7 @@
       <file leaf-file-name="20131223024026_create_blockedshows.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/db/migrate/20131223024026_create_blockedshows.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="31" selection-start="95" selection-end="95" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="225">
+            <state line="8" column="3" selection-start="178" selection-end="178" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="225">
               <folding />
             </state>
           </provider>
@@ -73,7 +74,7 @@
       <file leaf-file-name="20131215162557_create_phrases.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/db/migrate/20131215162557_create_phrases.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="0" selection-start="239" selection-end="239" vertical-scroll-proportion="0.2614897" vertical-offset="0" max-vertical-offset="631">
+            <state line="2" column="26" selection-start="85" selection-end="85" vertical-scroll-proportion="0.04754358" vertical-offset="0" max-vertical-offset="631">
               <folding />
             </state>
           </provider>
@@ -122,8 +123,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="12" />
-    <option name="y" value="135" />
+    <option name="x" value="-33" />
+    <option name="y" value="177" />
     <option name="width" value="1152" />
     <option name="height" value="725" />
   </component>
@@ -706,7 +707,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="12" y="135" width="1152" height="725" extended-state="0" />
+    <frame x="-33" y="177" width="1152" height="725" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1078,21 +1079,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/blockedshows/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="25" selection-start="785" selection-end="785" vertical-scroll-proportion="-13.75" vertical-offset="0" max-vertical-offset="795">
+        <state line="2" column="16" selection-start="47" selection-end="47" vertical-scroll-proportion="-1.25" vertical-offset="0" max-vertical-offset="795">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20131223024026_create_blockedshows.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="31" selection-start="95" selection-end="95" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="225">
+        <state line="8" column="3" selection-start="178" selection-end="178" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="225">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20131215162557_create_phrases.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="239" selection-end="239" vertical-scroll-proportion="0.2614897" vertical-offset="0" max-vertical-offset="631">
+        <state line="2" column="26" selection-start="85" selection-end="85" vertical-scroll-proportion="0.04754358" vertical-offset="0" max-vertical-offset="631">
           <folding />
         </state>
       </provider>
