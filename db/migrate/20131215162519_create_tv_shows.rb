@@ -2,7 +2,7 @@ class CreateTvShows < ActiveRecord::Migration
   def change
     create_table :tvshows do |t|
       t.string :title
-      t.string :image 
+      t.string :image
 
       t.timestamps
     end

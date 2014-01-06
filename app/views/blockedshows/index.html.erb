@@ -1,6 +1,6 @@
 <h1>My Blocked TV Shows:</h1>
 
-<% current_user.blockedshows.each_with_index do |blocked, index| %>
+<% current_user.tvshows.each_with_index do |blocked, index| %>
 
 
     <div class="panel-group" id="accordion">
@@ -22,7 +22,6 @@
 
                 <%@keywords = blocked.phrases.map(&:text) %>
                 <%=@keywords %> </br>
-                <%= button_to "Remove from Blocked List", blocked,  :method => :delete %>
 
               </h4>
             </div>
@@ -35,6 +34,7 @@
 
 
 <%= link_to "Add a TV Show", new_blockedshow_path %> </br>
+<a href="http://localhost:3000/blockedshows/destroy" >Remove a Tv Show</a> </p>
 
 
 

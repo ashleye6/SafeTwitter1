@@ -5,6 +5,8 @@ class TwitterController < ApplicationController
   def login
   end
 
+  #needs to go through blockshows.tvshows
+
   def timeline
     @key = current_user.blockedshows.map(&:phrases).flatten.map(&:text)
   end
@@ -16,8 +18,10 @@ class TwitterController < ApplicationController
   end
   private
 
+  #needs to go through blockedshows.map(&:tvshows).map(&:phrases)
+
   def is_redacted? tweet
-    @phrases ||= current_user.blockedshows.map(&:phrases).flatten.map(&:text)
+    @phrases ||= current_user.tvshows.map(&:phrases).flatten.map(&:text)
     @phrases.any? { |phrase| tweet.text.include? phrase }
   end
 

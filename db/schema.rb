@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140105184636) do
+ActiveRecord::Schema.define(version: 20140106020019) do
 
   create_table "blockedshows", force: true do |t|
     t.integer  "user_id"
@@ -39,12 +39,8 @@ ActiveRecord::Schema.define(version: 20140105184636) do
     t.datetime "updated_at"
   end
 
-  create_table "tvshows", force: true do |t|
-    t.string   "title"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.string   "image"
-  end
+# Could not dump table "tvshows" because of following NoMethodError
+#   undefined method `[]' for nil:NilClass
 
   create_table "users", force: true do |t|
     t.string   "provider"
