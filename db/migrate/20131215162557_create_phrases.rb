@@ -3,7 +3,6 @@ class CreatePhrases < ActiveRecord::Migration
     create_table :phrases do |t|
       t.string :text
       t.belongs_to :tvshow, index: true
-      t.belongs_to :blockedshow, index: true
 
       t.timestamps
     end

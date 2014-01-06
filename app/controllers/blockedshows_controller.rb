@@ -1,6 +1,7 @@
 class BlockedshowsController < ApplicationController
   def new
     @blockedshow = Blockedshow.new
+    @tvshows = Tvshow.all
   end
 
 
@@ -18,13 +19,8 @@ class BlockedshowsController < ApplicationController
   end
 
   def create
-    @tvshow = Tvshow.find params[:blockedshow][:tvshow_id]
-    @blockedshow = Blockedshow.new(
-        :user_id =>current_user.id,
-        :title=> @tvshow.title,
-        :image=> @tvshow.image,
-        :tvshow_id=>@tvshow.id
-    )
+    @blockedshow = Blockedshow.new(safe_blockedshow)
+    @blockedshow.user = current_user
 
     if @blockedshow.save
       flash[:notice] = "New Blocked TV Show added successfully"
@@ -40,7 +36,7 @@ class BlockedshowsController < ApplicationController
   private
 
   def safe_blockedshow
-    params.require(:blockedshow).permit(:title, :user_id, :tvshow_id, :image)
+    params.require(:blockedshow).permit(:tvshow_id)
   end
 
 end

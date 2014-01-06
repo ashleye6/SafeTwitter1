@@ -11,36 +11,33 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140106020019) do
+ActiveRecord::Schema.define(version: 20131223024026) do
 
   create_table "blockedshows", force: true do |t|
     t.integer  "user_id"
+    t.integer  "tvshow_id"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "title"
-    t.string   "image"
-    t.integer  "tvshow_id"
   end
 
   add_index "blockedshows", ["tvshow_id"], name: "index_blockedshows_on_tvshow_id"
+  add_index "blockedshows", ["user_id"], name: "index_blockedshows_on_user_id"
 
   create_table "phrases", force: true do |t|
-    t.integer  "blockedshow_id"
     t.string   "text"
-    t.datetime "created_at"
-    t.datetime "updated_at"
     t.integer  "tvshow_id"
-  end
-
-  create_table "search_suggestions", force: true do |t|
-    t.string   "term"
-    t.integer  "popularity"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-# Could not dump table "tvshows" because of following NoMethodError
-#   undefined method `[]' for nil:NilClass
+  add_index "phrases", ["tvshow_id"], name: "index_phrases_on_tvshow_id"
+
+  create_table "tvshows", force: true do |t|
+    t.string   "title"
+    t.string   "image"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "users", force: true do |t|
     t.string   "provider"

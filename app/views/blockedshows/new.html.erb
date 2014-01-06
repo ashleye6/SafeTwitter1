@@ -3,8 +3,8 @@
 
 <%= form_for @blockedshow do |b| %>
     <%= b.label :tvshow_id, "Add a Blocked TV Show " %><br/>
-    <%= collection_select(:blockedshow, :tvshow_id, Tvshow.all, :id, :title, prompt: true) %>
-
+    <%#= collection_select(:blockedshow, :tvshow_id, Tvshow.all, :id, :title, prompt: true) %>
+    <%= b.select :tvshow_id, options_from_collection_for_select(@tvshows, 'id', 'title') %>
     <%= submit_tag 'Add' %>
 <% end %>
 

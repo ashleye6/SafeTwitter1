@@ -12,27 +12,21 @@ puts 'Done adding tv shows'
 
 puts 'Adding phrases?'
 Phrase.create text: "Olivia Pope",
-              tvshow: tvshow2,
-              blockedshow_id: '1'
+              tvshow: tvshow2
 
 Phrase.create text: "Walt",
-              tvshow: tvshow1,
-              blockedshow_id: '2'
+              tvshow: tvshow1
 
 Phrase.create text: "GoT",
-              tvshow: tvshow3,
-              blockedshow_id: '3'
+              tvshow: tvshow3
 
 Phrase.create text: "Jesse",
-              tvshow: tvshow1,
-              blockedshow_id: '3'
+              tvshow: tvshow1
 
 Phrase.create text: "Huck",
-              tvshow: tvshow2,
-              blockedshow_id: '1'
+              tvshow: tvshow2
 
 Phrase.create text: "Joffrey",
-              tvshow_id: tvshow3,
-              blockedshow_id: '3'
+              tvshow_id: tvshow3
 
 puts 'Done adding phrases'

@@ -1,6 +1,6 @@
 class Tvshow < ActiveRecord::Base
     has_many :phrases
-    belongs_to :blockedshow
+    has_many :blockedshows
     has_many :users, through: :blockedshows
 
 
