@@ -8,7 +8,7 @@ class TwitterController < ApplicationController
   #needs to go through blockshows.tvshows
 
   def timeline
-    @key = current_user.blockedshows.map(&:phrases).flatten.map(&:text)
+    @key = current_user.tvshows.map(&:phrases).flatten.map(&:text)
   end
 
   def tweet
