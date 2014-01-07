@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d04b9524-8f42-48b4-8854-2322136c80d9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/seeds.rb" afterPath="$PROJECT_DIR$/db/seeds.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/twitter_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/twitter_controller.rb" />
-    </list>
+    <list default="true" id="d04b9524-8f42-48b4-8854-2322136c80d9" name="Default" comment="" />
     <ignored path="SafeTwitter.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -38,7 +35,7 @@
       <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/blockedshows/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="16" selection-start="401" selection-end="401" vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="795">
+            <state line="11" column="16" selection-start="401" selection-end="401" vertical-scroll-proportion="1.0" vertical-offset="189" max-vertical-offset="795">
               <folding />
             </state>
           </provider>
@@ -65,7 +62,7 @@
       <file leaf-file-name="seeds.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/db/seeds.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="41" selection-start="319" selection-end="319" vertical-scroll-proportion="-1.2123177" vertical-offset="898" max-vertical-offset="1545">
+            <state line="11" column="0" selection-start="392" selection-end="392" vertical-scroll-proportion="0.267423" vertical-offset="0" max-vertical-offset="1545">
               <folding />
             </state>
           </provider>
@@ -129,8 +126,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-13" />
-    <option name="y" value="193" />
+    <option name="x" value="-89" />
+    <option name="y" value="263" />
     <option name="width" value="1152" />
     <option name="height" value="724" />
   </component>
@@ -647,7 +644,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-13" y="193" width="1152" height="724" extended-state="0" />
+    <frame x="-89" y="263" width="1152" height="724" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -940,13 +937,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/blockedshows/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="16" selection-start="401" selection-end="401" vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="795">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/twitter/_tweets.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="0" selection-start="260" selection-end="260" vertical-scroll-proportion="-4.375" vertical-offset="0" max-vertical-offset="630">
@@ -968,9 +958,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/blockedshows/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="16" selection-start="401" selection-end="401" vertical-scroll-proportion="1.0" vertical-offset="189" max-vertical-offset="795">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/db/seeds.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="41" selection-start="319" selection-end="319" vertical-scroll-proportion="-1.2123177" vertical-offset="898" max-vertical-offset="1545">
+        <state line="11" column="0" selection-start="392" selection-end="392" vertical-scroll-proportion="0.267423" vertical-offset="0" max-vertical-offset="1545">
           <folding />
         </state>
       </provider>
