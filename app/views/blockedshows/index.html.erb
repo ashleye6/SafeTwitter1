@@ -23,6 +23,9 @@
                 <%@keywords = blocked.phrases.map(&:text) %>
                 <%=@keywords %> </br>
 
+                <%#= button_to "Remove from Blocked List", @blockedshow, :id => blocked.blockedshows, :method => :delete %>
+                <%= button_to "Remove from Blocked List", {:controller => :blockedshows,
+                :action => 'destroy', :id => blocked.blockedshows.map(&:id) }, :method => :delete %>
               </h4>
             </div>
           </div>
@@ -34,7 +37,6 @@
 
 
 <%= link_to "Add a TV Show", new_blockedshow_path %> </br>
-<a href="http://localhost:3000/blockedshows/destroy" >Remove a Tv Show</a> </p>
 
 
 

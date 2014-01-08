@@ -2,8 +2,6 @@ SafeTwitter::Application.routes.draw do
 
  
   get "search/index"
-  resources :search_suggestions
-
   root "twitter#index"
   get "twitter/login"
   get "twitter/finalize"
@@ -20,7 +18,7 @@ SafeTwitter::Application.routes.draw do
   end
   post 'twitter/timeline'
   resources :blockedshows
-  get 'blockedshows/destroy', to: 'blockedshows#index'
+  #get 'blockedshows/destroy', to: 'blockedshows#[:id]'
 
   post 'blockedshows', to:'blockedshows#create#[:id]'
   # The priority is based upon order of creation: first created -> highest priority.
