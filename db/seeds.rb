@@ -42,10 +42,13 @@ Phrase.create text: "Joffrey",
 Phrase.create text: "Quinn",
               tvshow: tvshow2
 
+Phrase.create text: "Scandal",
+              tvshow: tvshow2
+
 Phrase.create text: "#BreakingBad",
               tvshow: tvshow1
 
-Phrase.create text: "#Gameofthrones",
+Phrase.create text: "Gameofthrones",
               tvshow: tvshow3
 
 Phrase.create text: "heisenburg",

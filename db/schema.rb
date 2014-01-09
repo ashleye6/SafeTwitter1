@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131223024026) do
+ActiveRecord::Schema.define(version: 20140109010024) do
 
   create_table "blockedshows", force: true do |t|
     t.integer  "user_id"
@@ -45,6 +45,9 @@ ActiveRecord::Schema.define(version: 20131223024026) do
     t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "oauth_token"
+    t.string   "oauth_secret"
+    t.string   "image"
   end
 
 end

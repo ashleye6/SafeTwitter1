@@ -1,5 +1,5 @@
 <%= form_tag(tweet_path, method: "post") do %>
-    <%= label_tag(:my_tweet, image_tag(@profile_pic) )%>
+    <%= label_tag(:my_tweet, image_tag(current_user.image) )%>
     <%= text_field_tag(:my_tweet, nil, placeholder: 'tweet something', maxlength: 140, size: "60x10") %>
     <%= submit_tag("tweet") %> </br>
 

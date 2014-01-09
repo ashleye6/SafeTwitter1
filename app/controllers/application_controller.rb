@@ -2,15 +2,12 @@ class ApplicationController < ActionController::Base
   # Prevent CSRF attacks by raising an exception.
   # For APIs, you may want to use :null_session instead.
   protect_from_forgery with: :exception
-  before_filter :load_tweets
   #before_filter :authenticate
 
-  def load_tweets
-    @tweets = Client.home_timeline 
-  end
+
 
   def picture
-    @profile_pic = Client.profile_image_url
+    @profile_pic = current_user.twitterclient.profile_image_url
   end
 
   private
