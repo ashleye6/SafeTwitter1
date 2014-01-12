@@ -8,6 +8,8 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+<div id="wrap">
+
   <div id= "container">
     <div id="user_nav">
       <% if current_user %>
@@ -55,5 +57,17 @@
   </header>
   <%= yield %>
 </div>
+
+  <div id="push"></div>
+
+</div>
+
+
+  <div id="footer">
+    <div class="container">
+      <p class="muted credit"><i>Hand-coded by Ashley</i></p>
+    </div>
+  </div>
+
 </body>
 </html>
