@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d04b9524-8f42-48b4-8854-2322136c80d9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/seeds.rb" afterPath="$PROJECT_DIR$/db/seeds.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/SafeTwitter.iml" afterPath="$PROJECT_DIR$/.idea/SafeTwitter.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/twitter/_tweets.html.erb" afterPath="$PROJECT_DIR$/app/views/twitter/_tweets.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/phrase.rb" afterPath="$PROJECT_DIR$/app/models/phrase.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/twitter_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/twitter_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="SafeTwitter.iws" />
@@ -29,16 +34,61 @@
       <file leaf-file-name="seeds.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/db/seeds.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="96" column="0" selection-start="2270" selection-end="2270" vertical-scroll-proportion="0.0" vertical-offset="1028" max-vertical-offset="1620">
+            <state line="75" column="0" selection-start="1844" selection-end="1844" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1620">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="twitter_controller.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="phrase.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/phrase.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="0" selection-start="161" selection-end="161" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="twitter_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/twitter_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="11" selection-start="210" selection-end="210" vertical-scroll-proportion="0.03305785" vertical-offset="130" max-vertical-offset="735">
+            <state line="37" column="0" selection-start="827" selection-end="827" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="705">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="routes.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/routes.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="33" column="39" selection-start="1033" selection-end="1033" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1275">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_tweets.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/twitter/_tweets.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="37" column="0" selection-start="1075" selection-end="1075" vertical-scroll-proportion="0.9045226" vertical-offset="15" max-vertical-offset="645">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Gemfile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="16" selection-start="285" selection-end="285" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1050">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="timeline.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/twitter/timeline.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="120">
               <folding />
             </state>
           </provider>
@@ -76,7 +126,6 @@
         <option value="$PROJECT_DIR$/db/migrate/20131215162519_create_tv_shows.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20131215162557_create_phrases.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20131223024026_create_blockedshows.rb" />
-        <option value="$PROJECT_DIR$/app/models/phrase.rb" />
         <option value="$PROJECT_DIR$/app/models/tvshow.rb" />
         <option value="$PROJECT_DIR$/app/views/blockedshows/new.html.erb" />
         <option value="$PROJECT_DIR$/app/models/blockedshow.rb" />
@@ -87,18 +136,20 @@
         <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
         <option value="$PROJECT_DIR$/app/models/user.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20140109010024_add_image_to_user.rb" />
-        <option value="$PROJECT_DIR$/app/views/twitter/_tweets.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-        <option value="$PROJECT_DIR$/app/controllers/twitter_controller.rb" />
+        <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/db/seeds.rb" />
+        <option value="$PROJECT_DIR$/app/models/phrase.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/twitter_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/twitter/_tweets.html.erb" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="26" />
-    <option name="y" value="69" />
+    <option name="x" value="92" />
+    <option name="y" value="22" />
     <option name="width" value="1152" />
-    <option name="height" value="676" />
+    <option name="height" value="728" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -635,7 +686,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="26" y="69" width="1152" height="676" extended-state="0" />
+    <frame x="92" y="22" width="1152" height="728" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -748,7 +799,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/initializers/omniauth.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="5" selection-start="289" selection-end="289" vertical-scroll-proportion="0.19189766" vertical-offset="0" max-vertical-offset="469" />
+        <state line="6" column="5" selection-start="289" selection-end="289" vertical-scroll-proportion="0.19189766" vertical-offset="0" max-vertical-offset="469">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.0.0-p247/gems/activemodel-4.0.1/lib/active_model/deprecated_mass_assignment_security.rb">
@@ -763,7 +816,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/twitter/tweetfunc.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="22" selection-start="22" selection-end="22" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="490" />
+        <state line="0" column="22" selection-start="22" selection-end="22" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="490">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
@@ -799,11 +854,6 @@
     <entry file="file://$PROJECT_DIR$/app/views/twitter/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="73" selection-start="179" selection-end="179" vertical-scroll-proportion="0.09724473" vertical-offset="0" max-vertical-offset="617" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/twitter/timeline.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="629" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
@@ -844,13 +894,6 @@
         <state line="26" column="55" selection-start="1034" selection-end="1034" vertical-scroll-proportion="0.6330275" vertical-offset="45" max-vertical-offset="825" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="5" selection-start="449" selection-end="449" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1275">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/blockedshows/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="0" selection-start="331" selection-end="331" vertical-scroll-proportion="0.4032258" vertical-offset="0" max-vertical-offset="558" />
@@ -859,13 +902,6 @@
     <entry file="file://$PROJECT_DIR$/app/models/tvshow.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="26" selection-start="82" selection-end="82" vertical-scroll-proportion="0.049586777" vertical-offset="0" max-vertical-offset="605">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/phrase.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="43" selection-start="98" selection-end="98" vertical-scroll-proportion="0.049586777" vertical-offset="0" max-vertical-offset="605">
           <folding />
         </state>
       </provider>
@@ -916,11 +952,6 @@
         <state line="18" column="23" selection-start="584" selection-end="584" vertical-scroll-proportion="0.46542057" vertical-offset="21" max-vertical-offset="795" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/twitter/_tweets.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="11" selection-start="265" selection-end="265" vertical-scroll-proportion="0.1724138" vertical-offset="0" max-vertical-offset="630" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20140109010024_add_image_to_user.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="7" selection-start="106" selection-end="106" vertical-scroll-proportion="0.077319585" vertical-offset="0" max-vertical-offset="582">
@@ -930,19 +961,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/initializers/twitter_credentials.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="18" selection-end="18" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="225" />
+        <state line="1" column="0" selection-start="18" selection-end="18" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="225">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="46" selection-start="465" selection-end="465" vertical-scroll-proportion="0.35779816" vertical-offset="0" max-vertical-offset="975" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1035">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
@@ -964,16 +990,51 @@
         <state line="15" column="6" selection-start="344" selection-end="344" vertical-scroll-proportion="0.37190083" vertical-offset="0" max-vertical-offset="705" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="16" selection-start="285" selection-end="285" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1050">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/db/seeds.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="96" column="0" selection-start="2270" selection-end="2270" vertical-scroll-proportion="0.0" vertical-offset="1028" max-vertical-offset="1620">
+        <state line="75" column="0" selection-start="1844" selection-end="1844" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1620">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/phrase.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="0" selection-start="161" selection-end="161" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="39" selection-start="1033" selection-end="1033" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1275">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/twitter_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="11" selection-start="210" selection-end="210" vertical-scroll-proportion="0.03305785" vertical-offset="130" max-vertical-offset="735">
+        <state line="37" column="0" selection-start="827" selection-end="827" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="705">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/twitter/timeline.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="629">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/twitter/_tweets.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="0" selection-start="1075" selection-end="1075" vertical-scroll-proportion="0.9045226" vertical-offset="15" max-vertical-offset="645">
           <folding />
         </state>
       </provider>

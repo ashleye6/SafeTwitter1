@@ -9,6 +9,7 @@ group :development do
   gem 'sqlite3'
   gem 'guard-livereload', require: false
   gem 'rack-livereload'
+  gem 'pry-rails'
 end
 
 group :production do

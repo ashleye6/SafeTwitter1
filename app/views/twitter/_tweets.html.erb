@@ -8,16 +8,17 @@
 
 <section id="tweets">
   <ul>
-    <% tweet = @tweets.each do |tweet| %>
-    @<%= tweet.user.screen_name %>
-    <%= image_tag(tweet.user.profile_image_url) %>
+    <% @tweets.each do |tweet| %>
+        @<%= tweet.user.screen_name %>
+        <%= image_tag(tweet.user.profile_image_url) %>
 
 
                 <% if is_redacted? tweet %>
+
                     <!-- Tweet contains at least one blocked phrase. -->
 
                     <a href="https://www.twitter.com/#{tweet.user.screen_name}" data-toggle="tooltip"
-                       title="This tweet contains the phrase:<%=@key%> ">
+                       title="This tweet contains the phrase(s): <%= blocked_phrases(tweet).join(', ') %> ">
                       <%= check_if_redacted(tweet.text)%></a>
 
 
