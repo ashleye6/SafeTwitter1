@@ -98,4 +98,6 @@ Phrase.create text:"Sybil",
 Phrase.create text:"Mary",
               tvshow: tvshow4
 
+Phrase.create text:"#DowntonAbbey",
+              tvshow: tvshow4
 puts 'Done adding phrases'
